@@ -4,7 +4,7 @@
   <DatabaseHost>127.0.0.1</DatabaseHost>
   <DatabaseUser>root</DatabaseUser>
   <DatabasePassword></DatabasePassword>
-  <DatabaseName>Symbioz</DatabaseName>
+  <DatabaseName>dofus</DatabaseName>
   <ServerId>31</ServerId>
   <AuthPort>443</AuthPort>
   <WorldPort>5555</WorldPort>
