@@ -1,0 +1,12 @@
+Client: 127.0.0.1:51277
+At: 30/01/2017 14:03:24
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Symbioz.World.Models.Fights.Fighters.Fighter.TakeDamages(TakenDamages damages, Int32 sourceid) dans D:\Projets\Symbioz\Symbioz\World\Models\Fights\Fighters\Fighter.cs:ligne 691
+   à Symbioz.Providers.SpellEffectsProvider.DamageEffects.<>c__DisplayClass10_0.<DamageAir>b__0(Fighter x) dans D:\Projets\Symbioz\Symbioz\Providers\SpellEffectsProvider\Effects\DamageEffects.cs:ligne 112
+   à System.Collections.Generic.List`1.ForEach(Action`1 action)
+   à Symbioz.Providers.SpellEffectsProvider.DamageEffects.DamageAir(Fighter fighter, SpellLevelRecord level, ExtendedSpellEffect record, List`1 affecteds, Int16 castcellid) dans D:\Projets\Symbioz\Symbioz\Providers\SpellEffectsProvider\Effects\DamageEffects.cs:ligne 112
+   à Symbioz.Providers.SpellEffectsHandler.Handle(Fighter fighter, SpellLevelRecord record, ExtendedSpellEffect effect, List`1 affecteds, Int16 castcellid) dans D:\Projets\Symbioz\Symbioz\Providers\SpellEffectsProvider\SpellEffectsHandler.cs:ligne 42
+   à Symbioz.World.Models.Fights.Fighters.Fighter.HandleSpellEffects(SpellLevelRecord spell, Int16 cellid, FightSpellCastCriticalEnum critical) dans D:\Projets\Symbioz\Symbioz\World\Models\Fights\Fighters\Fighter.cs:ligne 333
+   à Symbioz.World.Models.Fights.Fighters.Fighter.CastSpellOnCell(UInt16 spellid, Int16 cellid, Int32 targetId) dans D:\Projets\Symbioz\Symbioz\World\Models\Fights\Fighters\Fighter.cs:ligne 419
+   à Symbioz.World.Models.Fights.Fighters.CharacterFighter.CastSpellOnCell(UInt16 spellid, Int16 cellid, Int32 targetId) dans D:\Projets\Symbioz\Symbioz\World\Models\Fights\Fighters\CharacterFighter.cs:ligne 114
+   à Symbioz.World.Handlers.FightHandler.HandleSpellCast(GameActionFightCastRequestMessage message, WorldClient client) dans D:\Projets\Symbioz\Symbioz\World\Handlers\FightHandler.cs:ligne 40

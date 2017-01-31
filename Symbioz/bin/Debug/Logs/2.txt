@@ -1,0 +1,9 @@
+Client: 127.0.0.1:51213
+At: 30/01/2017 13:54:33
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Symbioz.World.Records.Companions.CompanionRecord.<>c__DisplayClass12_0.<GetSpellItems>b__0(CompanionSpellRecord x) dans D:\Projets\Symbioz\Symbioz\World\Records\Companions\CompanionRecord.cs:ligne 50
+   à System.Collections.Generic.List`1.ConvertAll[TOutput](Converter`2 converter)
+   à Symbioz.World.Records.Companions.CompanionRecord.GetSpellItems(Character master) dans D:\Projets\Symbioz\Symbioz\World\Records\Companions\CompanionRecord.cs:ligne 50
+   à Symbioz.World.Models.Fights.Fighters.CompanionFighter..ctor(CompanionRecord template, CharacterFighter master, FightTeam team) dans D:\Projets\Symbioz\Symbioz\World\Models\Fights\Fighters\CompanionFighter.cs:ligne 30
+   à Symbioz.World.Models.Character.CreateFighter(FightTeam team) dans D:\Projets\Symbioz\Symbioz\World\Models\Character\Character.cs:ligne 133
+   à Symbioz.World.Handlers.FightPreparationHandler.HandleAttackRequest(GameRolePlayAttackMonsterRequestMessage message, WorldClient client) dans D:\Projets\Symbioz\Symbioz\World\Handlers\FightPreparationHandler.cs:ligne 96
